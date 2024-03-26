@@ -36,6 +36,6 @@ jobs:
         git config --global user.name "GitHub Actions"
         git remote add dokku dokku@grit-web02.grit.ucsb.edu:waves || git remote set-url dokku dokku@grit-web02.grit.ucsb.edu:waves
         # Ensure the Git working directory is clean after Jekyll build
-        git add _site/* -f && git commit -m "Jekyll build for deployment"
+        #git add _site/* -f && git commit -m "Jekyll build for deployment"
         git push dokku +main:main
       working-directory: ./_site
